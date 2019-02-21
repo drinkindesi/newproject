@@ -1,16 +1,16 @@
 // importing a class
-const Employee = require('./classes/Employee.js');
+const cars = require('./classes/cars.js');
 
-const emp1 = {
-    name: "Neeraj",
-    dept: "IT",
-    salary: 60000,
-    age: 33,
-    phone: 3435353535
+const car1 = {
+    make: "BMW",
+    model: "x6",
+    year: 2019,
+    price: 100000,
+    color: "black",
 };
 
 //create a class object
-var emp = new Employee(emp1); 
+var auto = new cars(car1); 
 
 //calling class method
-emp.basicDetails();
+auto.carDetails();
