@@ -1,14 +1,25 @@
 // Define a class
 class Employee
 {
+
+    constructor()
+    {   
+        // class properties or variables
+        this.name    = "Remi";
+        this.dept    = "IT";
+        this.salary  = 343434334;
+        this.age     = 23;
+        this.phone   = 35353535;
+    }
+
     // class methods or functions 
     basicDetails()
     {
-        console.log("Name: Remi");
-        console.log("Department: IT");
-        console.log("Salary: 499999");
-        console.log("Age: 23");
-        console.log("Phone: 2424244242");
+        console.log("Name: " + this.name);
+        console.log("Department: " + this.dept);
+        console.log("Salary: " + this.salary);
+        console.log("Age: " + this.age);
+        console.log("Phone: " + this.phone);
 
     }
 
@@ -25,11 +36,6 @@ class Employee
 
 
 //create a class object
-var emp = new Employee();
+var emp = new Employee(); 
 
 emp.basicDetails();
-emp.leaveDetails();
-
-var bonus = emp.bonus();
-
-console.log(bonus)
