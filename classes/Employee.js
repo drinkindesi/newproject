@@ -2,14 +2,14 @@
 class Employee
 {
 
-    constructor()
+    constructor(employee)
     {   
         // class properties or variables
-        this.name    = "Remi";
-        this.dept    = "IT";
-        this.salary  = 343434334;
-        this.age     = 23;
-        this.phone   = 35353535;
+        this.name    = employee.name;
+        this.dept    = employee.dept;
+        this.salary  = employee.salary;
+        this.age     = employee.age;
+        this.phone   = employee.phone;
     }
 
     // class methods or functions 
@@ -34,8 +34,4 @@ class Employee
     }
 }
 
-
-//create a class object
-var emp = new Employee(); 
-
-emp.basicDetails();
+module.exports = Employee;
